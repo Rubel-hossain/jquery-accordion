@@ -1,0 +1,131 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+
+
+.category-menu-area {
+  margin: 40px;
+}
+.category-title{
+    background: #555555 none repeat scroll 0 0;
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+    border-color: #dbb542;
+}
+.category-title h2 {
+  
+	border: 0 none;
+	color: white;
+	line-height: 50px;
+	margin: 0;
+	padding: 0 15px;
+	position: relative;
+}
+.category-menu {
+  border-left: 1px solid #f1f1f1;
+  border-radius: 0 0 5px 5px;
+  border-right: 1px solid #f1f1f1;
+}
+.category-menu ul{}
+.category-menu ul li{position: relative;}
+.category-menu ul li a{
+    border-bottom: 1px solid #f1f1f1;
+	cursor:pointer;
+}
+.category-menu ul li a{
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: -moz-use-text-color rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+	border-image: none;
+	border-style: none solid solid;
+	border-width: 0 1px 1px;
+	color: #444444;
+	display: block;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 30px;
+	padding: 10px 30px 0 10px;
+	text-transform: capitalize;
+}
+.category-menu ul li a:hover{
+  color: #92c234;
+  text-decoration: none;
+}
+span.holder{
+    cursor: pointer;
+}
+.has-sub span.holder::before {
+  content: "+";
+  font-size:18px;
+  float:right;
+}
+.has-sub.open span.holder::before{
+	content: "-";
+	font-size:18px;
+	color: #444444;
+}
+.category-menu ul li ul li.has-sub a::after{
+	content: "+";
+    font-size: 16px;
+    color: #444444;
+    float:right;
+}
+.category-menu ul li ul li.has-sub.open a::after{
+	content: "-";
+    font-size: 16px;
+    color: #444444;
+}
+.category-menu ul li ul li.has-sub ul li a::after{
+	display:none;
+}
+.category-menu ul li ul{
+	display:none;
+}
+.category-menu ul li ul li{
+    position: relative;
+}
+.category-menu ul li ul li a::before {
+  content: "\2022";
+  font-size: 16px;
+  color: #444444;
+  float:left;
+  padding-right:10px;
+
+}
+
+.category-menu ul li ul li ul li a {
+  padding-left: 45px;
+}
+/*.category-menu ul li ul li ul li::before{
+  content: "Six";
+  font-family: FontAwesome;
+  font-weight: normal;
+  height: 8px;
+  left: 30px;
+  line-height: 8px;
+  margin-top: -4px;
+  position: absolute;
+  top: 50%;
+  transition: all 0.5s ease 0s;
+  width: 8px;
+}*/
+.category-menu ul li ul li a{
+    border-left:none;
+}
+.banner-area {
+  margin: 30px 0;
+}
+.single-banner a img{
+    transition:0.3s;
+}
+.single-banner a img:hover {
+  opacity: 0.5;
+}
+ul {
+	list-style:none;
+}
